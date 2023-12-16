@@ -1,6 +1,6 @@
-package com.jpaul.service;
+nintep  ackage com.jpaul.service;
 
-import com.jpaul.dao.ICategoryDao;
+import com.jpaul.repository.ICategoryRepository;
 import com.jpaul.model.Category;
 import com.jpaul.response.CategoryResponseRest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import java.util.Optional;
 public class CategoryServiceImpl implements ICategoryService{
 
     @Autowired
-    private ICategoryDao iCategoryDao;
+    private ICategoryRepository iCategoryDao;
 
     @Override
     @Transactional(readOnly = true)
